@@ -1,0 +1,4 @@
+theme: jekyll-theme-cayman
+include: ['nested']
+relative_permalinks: false
+markdown: kramdown
