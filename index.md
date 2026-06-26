@@ -59,8 +59,31 @@ into smaller chunks.
   | uvex_drm     | Official tool to estimate science margin for the implementation of the DRM | Takes output of uvex_response, and output of schedule simulator, and DRM requirements to estimate science margin | Science margin per L1 science goal (or something…this should be a copy of what’s in the uvex-mission now.| HPE (BG, FAH, JBM)|
   | uvex_quick_im     | Simple imaging simulator for single frame exposures. Primarily used for ground calibration preparations, compressibility testing, guide star sims, etc. | Takes PSF libraries, uvex_response outputs, and can produce detector-images that can serve as inputs for ground calibration analysis development| FITS images for either an FUV or NUV detector. This is what’s in uvex-mission/imaging now.| BG (JBM)|
 
+# Status and version information
 
-## ScopeSim
+## uvex_response
+
+Not started
+
+## uvex_psf_
+
+Not started
+
+## uvex_imager_etc
+
+Not started
+
+## uvex_lss_sim_
+
+Not started
+
+## uvex_drm_
+
+Not started
+
+## uvex_quick0im_
+
+Not started
 
 ## MayaSim
 
