@@ -50,7 +50,14 @@ The above repo is too unweildy to last long term. So I think the plan is to spli
 into smaller chunks.
 
 | Repo      | Purpose | Inputs | Outputs | Lead Dev (CBB) |
-| uvex_response      | Maintain UVEX throughput curves and synthesize performance curves based on ground calibration data. Maintain versioned releases of detector performance for use below    | InpModels of individual component performance for optical elements and detector performance.As data become available, incorporate lab measurements or measurements from vendors
-uts | Official throughout curves, detector performance values, grating dispersion, etc. Should serve as inputs to everything below. This is the bulk of uvex.config() and uvex.filters() in uvex-mission now. Should produce outputs compatible with the UVEX ETC and DRM tools below as well as ScopeSim and RustSim inputs.
- |BG (FAH, JBM, HPE) |
+| uvex_response      | Maintain UVEX throughput curves and synthesize performance curves based on ground calibration data. Maintain versioned releases of detector performance for use below  | Models of individual component performance for optical elements and detector performance.As data become available, incorporate lab measurements or measurements from vendors | Official throughout curves, detector performance values, grating dispersion, etc. Should serve as inputs to everything below. This is the bulk of uvex.config() and uvex.filters() in uvex-mission now. Should produce outputs compatible with the UVEX ETC and DRM tools below as well as ScopeSim and RustSim inputs. |BG (FAH, JBM, HPE) |
  | uvex_psf     | Maintain the UVEX PSF libraries and input tools.  | Inputs from Fucik and Reiley capturing the as-designed PSFs, estimates for the as-built PSFs, and estimates for the as-flown PSFs| Libraries of PSFs (ePSF inputs?) used by downstream tools. Output formats TBD. |TBD (TBD)) |
+  | uvex_imager_etc     | Lightweight flux-to-counts converter and SRN estimation | Takes output of uvex_response and a source model. Simple scope of computations for throughput and SNR | Rates and SNR estimates for the UVEX FUV and NUV imagers (what’s in the ETC now) | HPE (BG, FAH, JBM)|
+  | uvex_lss_sim     | Lightweight 1-D spectral simulation tools | Takes output of uvex_response and a source model to produce a simulated 1D spectrum | 1D spectral tools and performance estimation (what’s in the uvex-mission now) | HPE (BG, FAH, JBM)|
+  | uvex_drm     | Official tool to estimate science margin for the implementation of the DRM | Takes output of uvex_response, and output of schedule simulator, and DRM requirements to estimate science margin | Science margin per L1 science goal (or something…this should be a copy of what’s in the uvex-mission now.| HPE (BG, FAH, JBM)|
+  | uvex_quick_im     | Simple imaging simulator for single frame exposures. Primarily used for ground calibration preparations, compressibility testing, guide star sims, etc. | Takes PSF libraries, uvex_response outputs, and can produce detector-images that can serve as inputs for ground calibration analysis development| FITS images for either an FUV or NUV detector. This is what’s in uvex-mission/imaging now.| BG (JBM)|
+
+
+## ScopeSim
+
+## MayaSim
