@@ -85,8 +85,9 @@ Not started
 
 Not started
 
-## MayaSim
+## ScopeSim
 
+## Rust/MayaSim
 
 ## **Imposter syndrome disclaimer**: We want your help. No, really.
 
