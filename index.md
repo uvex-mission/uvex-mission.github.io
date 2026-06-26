@@ -73,15 +73,15 @@ Not started
 
 Not started
 
-## uvex_lss_sim_
+## uvex_lss_sim
 
 Not started
 
-## uvex_drm_
+## uvex_drm
 
 Not started
 
-## uvex_quick0im_
+## uvex_quick_im
 
 Not started
 
@@ -109,7 +109,7 @@ a whole, because you're coming to the project with fresh eyes, so you can see
 the errors and assumptions that seasoned contributors have glossed over.
 
 Note: This disclaimer was originally written by
-`Adrienne Lowe <https://github.com/adriennefriend>`_ for a
-`PyCon talk <https://www.youtube.com/watch?v=6Uj746j9Heo>`_ , and was adapted by
-nustar-gen-util based on its use in the README file for the
-`MetPy project <https://github.com/Unidata/MetPy>`_.
+[Adrienne Lowe](https://github.com/adriennefriend) for a
+[PyCon talk](https://www.youtube.com/watch?v=6Uj746j9Heo), and was adapted by
+the UVEX team based on its use in the README file for the
+[MetPy project](https://github.com/Unidata/MetPy).
