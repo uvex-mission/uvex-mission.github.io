@@ -1,3 +1,4 @@
+# [The main UVEX Science page is here](https://www.uvex.caltech.edu/)
 
 # UVEX Software
 
@@ -38,8 +39,15 @@ live here.
 - uvex-mission/scheduling: Mostly jupyter notebooks to assess things like the field-of-
 regard throughout the year live here. The main scheduler tool does NOT live here.
 
-Admin: Brian Grefenstette
-CCB: Hannah Earnshaw, Jason McPhate, Fiona Harrison
-Status: Private, available to UVEX team members.
+- Admin: Brian Grefenstette
+- CCB: Hannah Earnshaw, Jason McPhate, Fiona Harrison
+- Status: Private, available to UVEX team members.
 
 
+## Planning purposes
+
+The above repo is too unweildy to last long term. So I think the plan is to split it up
+into smaller chunks.
+
+| Repo      | Purpose | Inputs | Outputs | Lead Dev (CBB) |
+| uvex_response      | Maintain UVEX throughput curves and synthesize performance curves based on ground calibration data. Maintain versioned releases of detector performance for use below    | Inputs | Outputs | Lead Dev (CBB) |
